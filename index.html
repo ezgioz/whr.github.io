@@ -370,14 +370,15 @@ $
 
 `$CI = \hat{p} \pm z^* \cdot SE$`  
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$CI = 0.64 \pm 1.96 \cdot 0.04$`  
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->`$CI = (0.56, 0.72)$`
+`$CI = 0.64 \pm 1.96 \cdot 0.04$`  
+
+`$CI = (0.56, 0.72)$`
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Conclusion 
 - We are 95% confident that the true proportion of happy countries lies between **56% and 72%**.  
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Since 70% falls **inside** this interval, there is **no strong evidence to suggest that the true proportion of happy countries is significantly different from 70%**
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->There is **no strong evidence** to suggest that the true proportion of happy countries is significantly different from 70%**
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -525,61 +526,6 @@ $
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Comparing Happy Countries in 2018 and 2021
-
-`$\hat{p}_{2018} = \frac{x_{2018}}{n_{2018}} = \frac{93}{145} \approx 0.6414$`  
-`$\hat{p}_{2021} = \frac{x_{2021}}{n_{2021}} = \frac{99}{145} \approx 0.6828$`  
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$\Delta \hat{p} = \hat{p}_{2021} - \hat{p}_{2018} = 0.6828 - 0.6414 = 0.0414$`  
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->`$SE = \sqrt{\frac{\hat{p}_{2018}(1 - \hat{p}_{2018})}{n_{2018}} + \frac{\hat{p}_{2021}(1 - \hat{p}_{2021})}{n_{2021}}} \approx 0.0521$`  
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->`$CI = \Delta \hat{p} \pm z^* \cdot SE = 0.0414 \pm 1.96 \cdot 0.0521$`  
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$CI = 0.0414 \pm 0.1021 = (-0.0674, 0.1502)$`  
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->There is no significant difference in the proportions of happy countries between 2018 and 2021.
-
-<aside class="notes"><p>Contingency table below:</p>
-<table>
-<thead>
-<tr>
-<th>Year</th>
-<th>Happy (<code>$x$</code>)</th>
-<th>Unhappy</th>
-<th>Total (<code>$n$</code>)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2018</td>
-<td>93</td>
-<td>52</td>
-<td>145</td>
-</tr>
-<tr>
-<td>2021</td>
-<td>99</td>
-<td>46</td>
-<td>145</td>
-</tr>
-</tbody></table>
-<p>The interval includes 0, so there is no significant difference in the proportions of happy countries between 2018 and 2021.</p>
-</div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Hypothesis Test for Difference of Proportions
-  
-  `$\hat{p} = \frac{x_{2018} + x_{2021}}{n_{2018} + n_{2021}} = \frac{93 + 99}{145 + 145} = 0.6414$`  
-
- - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$SE = \sqrt{\hat{p} \cdot (1 - \hat{p}) \cdot \left(\frac{1}{n_{2018}} + \frac{1}{n_{2021}}\right)} \approx 0.0522$`  
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" --> `$Z = \frac{\Delta \hat{p}}{SE} = \frac{0.0414}{0.0522} \approx 0.7449$`  
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->With `$Z = 0.7449$` and `$P > 0.05$`, we fail to reject `$H_0$`. 
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->There is insufficient evidence to conclude a significant change in the proportions of happy countries between 2018 and 2021.
-
-<aside class="notes"><p><code>$\hat{p}$</code> pooled proportion</p>
-</div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
 #####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
 - Analysis of question 3
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -597,15 +543,16 @@ Do happiness levels vary significantly by region?
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Merging some regıons
+##### Regıons summary
 <img src="z_WHR/Figures/fig_nbr_of_countries_per_region.png" alt="" style="object-fit: scale-down">
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Hypothesis Testing
+##### Hypothesis Testing (Chi-Square)
 
 1. **Null Hypothesis (`$H_0$`)**: Happiness levels are independent of region.
 2. **Alternative Hypothesis (`$H_a$`)**: Happiness levels depend on region.
+
 
 <aside class="notes"><ul>
 <li>The test statistic follows a chi-square distribution under the null hypothesis.</li>
@@ -658,9 +605,9 @@ For example, for "Asia, High Happiness":
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### **Chi-Square - calculatıng contrıbutıons
+##### Chi-Square - calculatıng contrıbutıons
 
-1. Calculate `$\chi^2$` for each cell:
+1. Calculate `$\chi^2$` for each case:
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$\chi^2_{\text{i, j}} = \frac{(\text{observed}_{ij} - \text{expected}_{ij})^2}{ \text{expected}_{ij}} $`
 
@@ -759,21 +706,21 @@ For example, for "Asia, High Happiness":
 
 - Definition: National average of binary responses (0 = No, 1 = Yes) to the question: _“If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?”_
 - Source: **Gallup World Poll (GWP)**.
-</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ####  **GDP per Capita**
 
 - Measured in terms of **Purchasing Power Parity (PPP)** adjusted to **constant 2017 international dollars**.
 - Source: **World Development Indicators (WDI)** by the World Bank.
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ####  **Generosity**
 
 - Definition: Residual from regressing the national average of GWP responses to the donation question: _“Have you donated money to a charity in the past month?”_ on **log GDP per capita**.
 - Source: **Gallup World Poll (GWP)**.
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ####  **Perceptions of Corruption**
@@ -783,7 +730,7 @@ For example, for "Asia, High Happiness":
     2. _“Is corruption widespread within businesses or not?”_
     - _If data for government corruption are missing, responses to business corruption are used._
 - Source: **Gallup World Poll (GWP)**.
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ####  **Healthy Life Expectancy at Birth**
@@ -791,13 +738,71 @@ For example, for "Asia, High Happiness":
 - Source: **WHO Global Health Observatory**.
     - Available for 2005, 2010, 2015, 2016, and 2019.
     - Interpolation and extrapolation are used to extend data to the sample period (2005–2022).
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ####  **Freedom to Make Life Choices**
 
 - National average of binary responses to the GWP question: _“Are you satisfied or dissatisfied with your freedom to choose what you do with your life?”_
 - Source: **Gallup World Poll (GWP)**.
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="app:question 2" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Appendix: Question 2
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+##### Comparing Happy Countries in 2018 and 2021
+
+`$\hat{p}_{2018} = \frac{x_{2018}}{n_{2018}} = \frac{93}{145} \approx 0.6414$`  
+`$\hat{p}_{2021} = \frac{x_{2021}}{n_{2021}} = \frac{99}{145} \approx 0.6828$`  
+
+`$\Delta \hat{p} = \hat{p}_{2021} - \hat{p}_{2018} = 0.6828 - 0.6414 = 0.0414$`   `$SE = \sqrt{\frac{\hat{p}_{2018}(1 - \hat{p}_{2018})}{n_{2018}} + \frac{\hat{p}_{2021}(1 - \hat{p}_{2021})}{n_{2021}}} \approx 0.0521$`   `$CI = \Delta \hat{p} \pm z^* \cdot SE = 0.0414 \pm 1.96 \cdot 0.0521$`  
+`$CI = 0.0414 \pm 0.1021 = (-0.0674, 0.1502)$`  
+
+No significant difference in the proportions of happy countries between 2018 and 2021.
+
+<aside class="notes"><p>Contingency table below:</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Happy (<code>$x$</code>)</th>
+<th>Unhappy</th>
+<th>Total (<code>$n$</code>)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2018</td>
+<td>93</td>
+<td>52</td>
+<td>145</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>99</td>
+<td>46</td>
+<td>145</td>
+</tr>
+</tbody></table>
+<p>The interval includes 0, so there is no significant difference in the proportions of happy countries between 2018 and 2021.</p>
+</div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+##### Hypothesis Test for Difference of Proportions
+  
+  `$\hat{p} = \frac{x_{2018} + x_{2021}}{n_{2018} + n_{2021}} = \frac{93 + 99}{145 + 145} = 0.6414$`  
+
+ - `$SE = \sqrt{\hat{p} \cdot (1 - \hat{p}) \cdot \left(\frac{1}{n_{2018}} + \frac{1}{n_{2021}}\right)} \approx 0.0522$`  
+-  `$Z = \frac{\Delta \hat{p}}{SE} = \frac{0.0414}{0.0522} \approx 0.7449$`  
+ 
+ With `$Z = 0.7449$` and `$P > 0.05$`, we fail to reject `$H_0$`. 
+ 
+Insufficient evidence to conclude a significant change in the proportions of happy countries between 2018 and 2021.
+
+<aside class="notes"><p><code>$\hat{p}$</code> pooled proportion</p>
+</div></aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 <style>
     .footnote {
