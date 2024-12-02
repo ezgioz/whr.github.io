@@ -87,6 +87,18 @@
       <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+### Understanding Global Happiness
+
+**Ezgi Özsöğüt**
+
+www.ezgiozsogut.com <!-- .element: class="small" -->
+
+İzmir Ekonomi Üniversitesi - ECON208
+
+6 December 2024
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
 ###  Outline
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Step 1: Data overview
@@ -101,11 +113,12 @@
 
 ### Step 1: Data Overview
 
-- Cross-sectional country-level data for 2018* from **World Happiness Report**
-- **Data sources**
+- Cross-sectional country-level data from **World Happiness Report**
+	- Years: 2018 and 2021
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Data sources**
 	- Gallup World Poll (GWP)
 	- World Development Indicators (WDI)
-	- WHO Global Health Observatory**.
+	- WHO Global Health Observatory
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -128,13 +141,14 @@
 
 ##### At first glance 
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Differences in names 
-	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->(e.g., "Score" vs. "Ladder score").
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Missing data (region, countries, scores) requires standardization.
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Differences in indicator names 
+	- (e.g., "Score" vs. "Ladder score").
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Missing data requires standardization.
+	- (region, countries, scores)
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Step 1: Data overview
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Next Step**: Prepare data for merging and standardize regional variables.
@@ -156,7 +170,7 @@
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Step 2: Cleaning and standardizing
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Next step:** Summary statistics and preliminary analysis
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -187,6 +201,14 @@
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### 1. Summary Statistics
+
+| Statistic  | Score | Score 2021 | GDP  | Social support | ... |
+| ---------- | ----- | ---------- | ---- | -------------- | --- |
+| **Mean**   | 5.44  | 5.60       | 0.92 | 1.24           | ... |
+| **Median** | 5.48  | 5.67       | 0.98 | 1.28           | ... |
+| **Std**    | 1.08  | 1.05       | 0.37 | 0.28           | ... |
+| **Min**    | 2.91  | 2.52       | 0.08 | 0.37           | ... |
+| **Max**    | 7.63  | 7.84       | 2.10 | 1.64           | ..  |
 
 
 <aside class="notes"><ul>
@@ -238,7 +260,7 @@ Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Step 3: Preliminary analysis 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Next step:** Research questions based on preliminary analysis
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -249,55 +271,51 @@ Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Research Questions
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 1: A recent report* claims that 70% of countries found the be happy in 2018? Can our data back this claim?
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 1: [A recent report](https://www.ipsos.com/en-my/happiness-receding-across-world-0) claims that 70% of countries found the be happy in 2018? Can our data back this claim?
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Question 2: What factors are most closely associated with happiness?
-
-* _footnote_
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Research questions (2)
 - Question 3: How have happiness changed from 2018 to 2021, and are these changes statistically significant?
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 4: How do happiness levels vary by region?
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->([Note on methodology)](#app:note_method)
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Proposed methods
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 1:  70% of countries were happy in 2018? 
 	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Assessing Normality: Histogram, check empirical rule, CLT
-	- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Confidence intervals and Hypothesis testing
+	- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Confidence intervals and hypothesis testing
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Question 2: What factors are most closely associated with happiness?
 	- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Correlation matrix, scatter plot, side-by-side box plots, side-by-side histograms
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="#research_questions_2" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Proposed methods (2)
+
+
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 3: How have happiness changed from 2018 to 2021
 	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Confidence intervals, t-test for difference in means, hypothesis tests
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Question 4: How do happiness levels vary by region?
 	- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Boxplots, chi-Square test of independence, confidence interval for differences
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Note that (thıs CAN go to appendıx)
-
-- Here we chose our research questions based on the preliminary analysis
-- Another approach would be to 
-	- (i) ask some questions 
-	- (ii) go find relevant data _(or experiment)_ 
-	- (iii) propose methodology
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Question 1
-- Ipsos report claims that 70% of countries found the be happy in 2018. Is this true?
+- The report claims that 70% of countries found the be happy in 2018.* Is this true?
+
+<!-- Footnote -->
+<div class="footnote">
+    <p>* "Globally, the prevalence of happiness is down 6 points from 70% in 2018" (Source: Ipsos)</p>
+</div>
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Normality? 
+##### Assessıng normalıty
 - Can the distribution of happiness scores approximate a normal distribution?
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Motivation**: Enables the use of  methods like confidence intervals and hypothesis testing
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -321,7 +339,7 @@ Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### empırıcal rule
+##### Assessing Normality: Empırıcal rule (2)
 
 |               | Theoritical (`$p$`) | Observed (`$\hat{p}$`) |     |
 | ------------- | ----------------- | -------------------- | --- |
@@ -366,6 +384,8 @@ $
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+##### Confidence Interval (2)
+
 `$\hat{p} = 0.64$`, `$SE = 0.04$`, `$z^* = 1.96$`
 
 `$CI = \hat{p} \pm z^* \cdot SE$`  
@@ -378,7 +398,7 @@ $
 
 ##### Conclusion 
 - We are 95% confident that the true proportion of happy countries lies between **56% and 72%**.  
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->There is **no strong evidence** to suggest that the true proportion of happy countries is significantly different from 70%**
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->There is **no strong evidence** to suggest that the true proportion of happy countries is significantly different from 70%
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -402,25 +422,18 @@ $
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->`$ Z = \frac{0.64 - 0.7}{\sqrt{\frac{0.7 \cdot 0.3}{145}}} = \frac{-0.06}{\sqrt{\frac{0.21}{145}}} = \frac{-0.06}{0.04} = -1.54$`
 - &shy;<!-- .element: class="fragment" data-fragment-index="3" -->For `$Z = -1.54$`,  `$P \approx 0.123$`
 - &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Two-tailed test `$\rightarrow$` `$P = 2 \cdot 0.123 = 0.246$`
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="#q1_decision" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Decision:
 
 - With `$P = 0.246 > 0.05$`, fail to reject `$H_0$`
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->There is no strong evidence to suggest that the proportion of happy countries is significantly different from 70%.
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->[Note]("#app:note_on_ci_vs_ht)
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Remınder on Confidence ıntervals and hypothesıs textıng
-- **CIs** provide a range of plausible values for the proportion
-	- _Focusing on estimation and precision._
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Hypothesis tests** assess whether the proportion differs significantly from a specific benchmark, 
-	- _Answering a yes/no question._
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Analysis of question 1
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -454,7 +467,7 @@ $
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Analysis of question 2
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -526,7 +539,7 @@ $
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Analysis of question 3
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -657,7 +670,7 @@ For example, for "Asia, High Happiness":
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?gid=1854088385#gid=1854088385) 
+#####  Let's go to data [`$\rightarrow$`  data sheet](https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing) 
 - Analysis of question 4
 </div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -748,7 +761,10 @@ For example, for "Asia, High Happiness":
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="app:question 2" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Appendix: Question 2
+### Appendix B: Question 2
+
+
+- Alternative analysis: difference of two proportions (Chapter 6.2)
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -801,7 +817,35 @@ No significant difference in the proportions of happy countries between 2018 and
 Insufficient evidence to conclude a significant change in the proportions of happy countries between 2018 and 2021.
 
 <aside class="notes"><p><code>$\hat{p}$</code> pooled proportion</p>
-</div></aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Appendix C: Extra slides
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="app:note_method" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+##### Note on methodology
+
+- Here we chose our research questions based on the preliminary analysis
+- Another approach would be to 
+	- (i) ask some questions 
+	- (ii) go find relevant data _(or experiment)_ 
+	- (iii) propose methodology
+
+[Back to research questions](#research_questions_2)
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="#app:note_on_ci_vs_ht" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+##### note on Confidence ıntervals and hypothesıs textıng
+
+
+
+- **CIs** provide a range of plausible values for the proportion
+	- _Focusing on estimation and precision._
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Hypothesis tests** assess whether the proportion differs significantly from a specific benchmark, 
+	- _Answering a yes/no question._
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->[back to question 1](#q1_decision)
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 <style>
