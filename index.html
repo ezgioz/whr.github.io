@@ -102,19 +102,16 @@ www.ezgiozsogut.com <!-- .element: class="small" -->
 ###  Outline
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Step 1: Data overview
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Step 2: Cleaning and standardizing
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Step 3: Preliminary analysis 
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Step 4: Research Questions
-	- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Proposed methods
-	- &shy;<!-- .element: class="fragment" data-fragment-index="6" -->Through analysis 
-- &shy;<!-- .element: class="fragment" data-fragment-index="7" -->Step 5: Discussion of main findings
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Step 2: Preliminary analysis 
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Step 3: Research Questions and analysis
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Step 4 Discussion of main findings
 </div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="data_overview" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Step 1: Data Overview
 
 - Cross-sectional country-level data from [**World Happiness Report**](https://worldhappiness.report/)
-	- Years: 2018 and 2021
+	- Years: 2018 and 2021 for 145 countries
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Data sources**
 	- Gallup World Poll (GWP)
 	- World Development Indicators (WDI)
@@ -127,11 +124,11 @@ www.ezgiozsogut.com <!-- .element: class="small" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### ındıcators summary
+##### Variables summary
 
 - **Happiness Score**: Average survey rating of well-being. (2018 & 2021)
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Other indicators**: GDP per capita, social support, healthy life expectancy, perceptions of corruption, and freedom to make life choices. (all numerical)
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Country & Regions**: Countries categorized into 10 global regions. (categorical)
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Other variables**: GDP per capita, social support, healthy life expectancy, perceptions of corruption, and freedom to make life choices. 
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Country & Regions**: Countries categorized into 10 global regions. 
 <!-- Footnote -->
 <div class="footnote">
 	<p>1. <a href="#app:variable_deifinitions" target="_blank">Appendix: Variable definitions</a></p>
@@ -141,64 +138,13 @@ www.ezgiozsogut.com <!-- .element: class="small" -->
 
 ##### Research motıvation
 
-- Explore global and regional variations in happiness
-- Investigate factors influencing happiness levels
-- Assess the impact of COVID-19 on happiness
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### At first glance 
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Differences in indicator names 
-	- (e.g., "Score" vs. "Ladder score").
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Missing data requires standardization.
-	- (region, countries, scores) 
-
-<!-- Footnote -->
-<div class="footnote">
-	<p>1. <a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-#####  Recap
-- Step 1: Data overview
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Next Step**: Prepare data for merging and standardize regional variables.
+- Explore global variations in happiness
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Investigate factors influencing happiness levels
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Assess the impact of COVID-19 on happiness
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-###  Step 2: Cleaning and standardizing
-- Combine datasets for unified analysis.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### data cleanıng 
-1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Standardize indicator names 
-1. &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Align country names 
-1. &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Map missing regions in 2018 using 2021 data.
-1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Drop missing observations 
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->**Final dataset:** 145 countries with complete data
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-#####  Recap 
-- Step 2: Cleaning and standardizing
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Next step:** Summary statistics and preliminary analysis
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-###  Step 3: Summarizing data and preliminary analysis
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### 0. Preliminarıes
+###  Step 2: Preliminary analysis
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -240,12 +186,14 @@ www.ezgiozsogut.com <!-- .element: class="small" -->
 </aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### 2. Visualize Distributions
+##### 2. Vısualızıng dıstrıbutıons
+<img src="12. Teaching/WHR/Figures/fig_histogram_2018_2021.png" alt="" style="object-fit: scale-down">
 
-<img src="12. Teaching/WHR/Figures/fig_histogram_boxplot.png" alt="" style="object-fit: scale-down">
+
 
 <aside class="notes"><p>Figure: <strong>Histogram</strong>: Show frequency of happiness scores.
-Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
+Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers
+Suggests potential increase in overall happiness over time.</p>
 </div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -256,75 +204,27 @@ Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### 4. Comparing 2018 vs. 2021
-
-<img src="12. Teaching/WHR/Figures/fig_histogram_2018_2021.png" alt="" style="object-fit: scale-down">
-
-<aside class="notes"><p>Suggests potential increase in overall happiness over time.</p>
-</div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
 #### Summary of Preliminary findings
 
 1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Happiness Scores**:
+	- Western Europe ranks highest, Sub-Saharan Africa lowest 
 	- Symmetrical distributions _(slight left skew)_.
-	- Stable patterns across regions and time 
 	- Histogram suggests potential increase in overall happiness over time
 1. &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Correlations**:
 	- Happiness + linked with GDP, social support, healthy life expectancy, freedom
 	- Corruption and generosity seems unrelated.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-#### Summary of Preliminary findings
-1. Happiness Scores
-2. Correlations
-3. **Regional Differences**:
-	- Western Europe consistently ranks highest
-	- Sub-Saharan Africa lowest 
-
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-#####  recap
-- Step 3: Preliminary analysis suggests
-	- Symmetrical **distribution of happiness scores** with stable patterns
-	- 3 indicators highly correlated with happiness
-	- Potential increase in overall happiness from 2018 to 2021
-	- Differences in happiness across regions
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Next step:** Research questions based on preliminary analysis
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-###  Step 4: Research Questions
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Research Questions
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 1: [A recent report](https://www.ipsos.com/en-my/happiness-receding-across-world-0) claims that 70% of countries found the be happy in 2018? Can our data back this claim?
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Question 2: What factors are most closely associated with happiness?
+###  Step 3: Research Questions
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="research_questions_2" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Research questions (2)
+##### Research Questions
 
-
-
-- Question 3: How have happiness changed from 2018 to 2021, and are these changes statistically significant?
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 4: How do happiness levels vary by region?
-
-
-
-<!-- Footnote -->
-<div class="footnote">
-	<p>1. <a href="#app:proposed_methods_1" target="_blank">Proposed methods</a></p>
-    <p>2. <a href="#app:note_method" target="_blank">Note on methodology steps</a> </p>
-</div>
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 1: [A recent report](https://www.ipsos.com/en-my/happiness-receding-across-world-0) claims that 70% of countries found the be happy in 2018? Can our data back this claim?
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Question 2: What factors are most closely associated with happiness?
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Question 3: How have happiness changed from 2018 to 2021, and are these changes statistically significant?
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -346,8 +246,9 @@ Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
 
 ##### Assessing Normality: Visıual ınspectıon
 
-<img src="12. Teaching/WHR/Figures/fig_histogram_happiness_with_norm.png" alt="" style="object-fit: scale-down">
 
+
+<img src="12. Teaching/WHR/Figures/fig_empirical_curve.png" alt="" style="object-fit: scale-down">
 
 <aside class="notes"><ul>
 <li><strong>Histogram</strong>: Plot happiness scores with a theoretical normal curve overlayed.</li>
@@ -356,13 +257,7 @@ Figure: <strong>Box Plot</strong>: Highlight spread and potential outliers.</p>
 </aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Assessing Normality: Empırıcal rule
-
-<img src="12. Teaching/WHR/Figures/fig_empirical_curve.png" alt="" style="object-fit: scale-down">
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Assessing Normality: Empırıcal rule (2)
+##### Assessing Normality: Empırıcal rule 
 
 |               | Theoritical (`$p$`) | Observed (`$\hat{p}$`) |     |
 | ------------- | ----------------- | -------------------- | --- |
@@ -401,9 +296,9 @@ $
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->93 out of 145 countries have happiness scores > 5.
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->`$\hat{p} = \frac{93}{145} = 0.6414$`  
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->`$\hat{p} = \frac{93}{145} = 0.64$`  
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$ SE = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}} = \sqrt{\frac{0.6414 \cdot (1 - 0.6414)}{145}} = 0.0398 $`
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->`$ SE = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}} = \sqrt{\frac{0.64 \cdot (1 - 0.64)}{145}} = 0.04 $`
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -422,7 +317,18 @@ $
 
 - We are 95% confident that the true proportion of happy countries lies between **56% and 72%**.  
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->There is **no strong evidence** to suggest that the true proportion of happy countries is significantly different from 70%
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+
+<aside class="notes"><ul>
+<li><strong>CIs</strong> provide a range of plausible values for the proportion<ul>
+<li><em>Focusing on estimation and precision.</em></li>
+</ul>
+</li>
+<li>&shy;<!-- .element: class="fragment" data-fragment-index="2" --><strong>Hypothesis tests</strong> assess whether the proportion differs significantly from a specific benchmark, <ul>
+<li><em>Answering a yes/no question.</em></div></li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Hypothesis Test:
@@ -435,30 +341,39 @@ Test whether the proportion of happy countries is 70%:
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### P-value:
+##### Hypothesis Test Steps
 
 $
 Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}
 $
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->For `$\hat{p} = 0.6414, \, p_0 = 0.7, \, \text{and} \, n = 145$`
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->For `$\hat{p} = 0.64, \, p_0 = 0.7, \, \text{and} \, n = 145$`
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->`$ Z = \frac{0.64 - 0.7}{\sqrt{\frac{0.7 \cdot 0.3}{145}}} = \frac{-0.06}{\sqrt{\frac{0.21}{145}}} = \frac{-0.06}{0.04} = -1.54$`
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->For `$Z = -1.54$`,  `$P \approx 0.123$`
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Two-tailed test `$\rightarrow$` `$P = 2 \cdot 0.123 = 0.246$`
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->For `$Z = -1.54$`,  `$P \approx 0.12$`
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Two-tailed test `$\rightarrow$` `$P = 2 \cdot 0.12 = 0.25$`
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="#q1_decision" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### Decision:
 
-- With `$P = 0.246 > 0.05$`, fail to reject `$H_0$`
+- With `$P = 0.25 > 0.05$`, fail to reject `$H_0$`
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->There is no strong evidence to suggest that the proportion of happy countries is significantly different from 70%. *
 
+<aside class="notes"><ul>
+<li><strong>CIs</strong> provide a range of plausible values for the proportion<ul>
+<li><em>Focusing on estimation and precision.</em></li>
+</ul>
+</li>
+<li>&shy;<!-- .element: class="fragment" data-fragment-index="2" --><strong>Hypothesis tests</strong> assess whether the proportion differs significantly from a specific benchmark, <ul>
+<li><em>Answering a yes/no question.</em></li>
+</ul>
+</li>
+</ul>
 <!-- Footnote -->
 <div class="footnote">
-	<p><a href="#app:note_on_ci_vs_ht" target="_blank">* Note on confidence intervals and hypothesis testing</a></p>
-	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
+    <p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Data sheet</a></p>
 </div>
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div></aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Question 2
@@ -478,7 +393,7 @@ $
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Happiness  & healthy life expectancy countries
+##### Happiness  & healthy life expectancy
 
 <img src="12. Teaching/WHR/Figures/fig_happiness_healthy.png" alt="" style="object-fit: scale-down">
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -490,7 +405,7 @@ $
 
 <!-- Footnote -->
 <div class="footnote">
-	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
+	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Data sheet</a></p>
 </div>
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -505,31 +420,15 @@ $
 
   `$\Delta \text{Happiness} = \text{Happiness}_{21} - \text{Happiness}_{18}$`
 
-|                        | Value |     |
-| ---------------------- | ----- | --- |
-| **Mean**               | 0.12  |     |
-| **Median**             | 0.10  |     |
-| **Standard Deviation** | 0.38  |     |
-| **Minimum**            | -1.11 |     |
-| **Maximum**            | 1.13  |     |
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Distribution of Changes
-
 <img src="12. Teaching/WHR/Figures/fig_histogram_change_18_21.png" alt="" style="object-fit: scale-down">
 
 
-<aside class="notes"><p><code>$\Delta \text{Happiness}$</code> is approximately <strong>normally distributed around zero</strong>  with a slight positive mean of <code>$0.12$</code>.  <strong>Balance</strong>: No extreme outliers dominating the trend.   <strong>Variability</strong>: The sd (<code>$0.38$</code>) reflects moderate variabilit  yet with notable increases (<code>$+1.13$</code>) to declines (<code>$-1.11$</code>).</p>
-</div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Interpretation:
-
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Slight positive mean (`$0.12$`) suggests a small overall improvement in happiness
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->The normal distribution highlights (`$-1.11$`, `$+1.13$`) the uneven impact of global events like COVID-19 across different countries.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="q3_hypothesis_testing" -->
+<aside class="notes"><p><code>$\Delta \text{Happiness}$</code> is approximately <strong>normally distributed around zero</strong>  with a slight positive mean of <code>$0.12$</code>.  <strong>Balance</strong>: No extreme outliers dominating the trend.   <strong>Variability</strong>: The sd (<code>$0.38$</code>) reflects moderate variabilit  yet with notable increases (<code>$+1.13$</code>) to declines (<code>$-1.11$</code>).  </p>
+<ul>
+<li>&shy;<!-- .element: class="fragment" data-fragment-index="1" -->Slight positive mean (<code>$0.12$</code>) suggests a small overall improvement in happiness</li>
+<li>&shy;<!-- .element: class="fragment" data-fragment-index="2" -->The normal distribution highlights (<code>$-1.11$</code>, <code>$+1.13$</code>) the uneven impact of global events like COVID-19 across different countries.</div></li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="q3_hypothesis_testing" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ##### One-Sample t-Test for Difference in Means
@@ -566,131 +465,13 @@ $
 
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Conclusion**: There is no statistically significant difference in mean happiness scores between 2018 and 2021.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Not convinced? [See appendix](#app:question_3) for further evidence 
+
 
 <!-- Footnote -->
 <div class="footnote">
-	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
+	<p><a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Data sheet</a></p>
 </div>
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Question 4
-
-Do happiness levels vary significantly by region?
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Motivation: Explore geographic influences on happiness.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Hapiness score dıstrıbutıon by regıon
-<img src="12. Teaching/WHR/Figures/fig_hapiness_by_region_boxplot.png" alt="" style="object-fit: scale-down">
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Regıons summary
-<img src="12. Teaching/WHR/Figures/fig_nbr_of_countries_per_region.png" alt="" style="object-fit: scale-down">
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Hypothesis Testing (Chi-Square)
-
-1. **Null Hypothesis (`$H_0$`)**: Happiness levels are independent of region.
-2. **Alternative Hypothesis (`$H_a$`)**: Happiness levels depend on region.
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#merged_regions" target="_blank">Merged regions and counts </a></p>
-</div>
-
-<aside class="notes"><ul>
-<li>The test statistic follows a chi-square distribution under the null hypothesis.</li>
-<li>This is a theoretical distribution used to evaluate whether observed differences are due to random chance.</div></li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="expected_counts" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### **Calculatıng Expected Counts**
-
-
- Create an [expected counts table](#expected_counts_table) with all `$E_{i,j}$` using the observed counts
-
- `$E = \frac{\text{Row Total} \times \text{Column Total}}{\text{Grand Total}}$`
-
-<!-- Footnote -->
-<div class="footnote">
-    <p><a href="#merged_regions" target="_blank">See observed counts table </a></p>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### **Example: Calculatıng Expected Counts**
-
-| Observed counts table | High | Low | Total |     |
-| --------------------- | ---- | --- | ----- | --- |
-| Asia                  | 13   | 8   | 21    |     |
-| ...                   | ...  | ... | ...   |     |
-| **Total**             | 93   | 52  | 145   |     |
- `$E_{\text{Asia, L}} = \frac{21 \cdot 52}{145} \approx 13.47$` 
- `$E_{\text{Asia, H}} = \frac{21 \cdot 93}{145} \approx 7.53$`
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="calculating_contributions" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Chi-Square - calculatıng contrıbutıons
-
-1. Calculate `$\chi^2$` for each case:
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$\chi^2_{\text{i, j}} = \frac{(\text{observed}_{ij} - \text{expected}_{ij})^2}{ \text{expected}_{ij}} $`
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->`$\chi^2_{\text{Asia, High}} = \frac{(13 - 13.47)^2}{13.47} \approx 0.0163$`
-<!-- Footnote -->
-<div class="footnote">
-    <p><a href="#expected_counts_table" target="_blank">Expected counts table </a> </p>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### **Chi-Square statıstıc**
-
-
-| Count `$\rightarrow$` | Obverved | Expected | `$\chi^2$` |     |
-| ------------------- | -------- | -------- | -------- | --- |
-| Asia, H             | `$13$`     | `$13.47$`  | `$0.02$`   |     |
-| Asia, L             | `$8$`      | `$7.53$`   | `$0.03$`   |     |
-| CEE, H              | `$15$`     | `$10.90$`  | `$1.58$`   |     |
-| CEE, L              | `$2$`      | `$6.10$`   | `$2.75$`   |     |
-| *...*               | *...*    | *...*    | *...*    |     |
-
- `$\chi^2_{\text{Asia, High}} + \chi^2_{\text{Asia, Low}} + ... +$` `$\chi^2_{\text{West, High}} + \chi^2_{\text{West, Low}} = \chi^{2} = 73.14$`
-
-<aside class="notes"><p>Each cell in the table measures how much the observed count deviates from the expected count. Adding these contributions gives the overall <code>$\chi^2$</code> statistic, which quantifies the total deviation across all regions and happiness levels.</p>
-<ul>
-<li>A large <code>$\chi^2$</code> value indicates that the observed data significantly deviates from the expected distribution under <code>$H_0$</code> (independence).</li>
-<li>Since <code>$\chi= 73.14$</code> exceeds the critical value of <code>$12.59$</code>, we conclude that happiness levels are not independent of region.</div></li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### **Chi-Square Test Results**
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" --> `$\chi^{2} = 73.14$`  , `$df = (7 - 1)(2 - 1) = 6$`  
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Critical value `$12.59$` `$\rightarrow$` P-Value `$\approx 0$`
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" --> `$\chi^{2} = 73.14 > 12.59$`, we **reject `$H_0$`**.  
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->There is significant evidence that happiness levels depend on region.
-
-
-<!-- Footnote -->
-<div class="footnote">
-    <p>  *Critical value for alpha = 0.05  </p>
-    <p> 1. <a href="#more_on_chi_squared_test_result" target="_blank">More on chi-square test results </a></p>
-    <p> 2. <a href="https://docs.google.com/spreadsheets/d/1XoFrxQnOBepxKMwl3RQ5IIqjrxvSjto_6S4BGvNIHwg/edit?usp=sharing" target="_blank">Let's go to the data sheet</a></p>
-</div>
-
-
-
-<aside class="notes"><ul>
-<li>&shy;<!-- .element: class="fragment" data-fragment-index="5" --><strong>P-Value</strong>: <code>$9.26 \times 10^{-14}$</code></div></li>
-</ul>
-</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Step 5: Discussion of main findings
@@ -701,15 +482,13 @@ Do happiness levels vary significantly by region?
 1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->We can not reject the hypothesis that 70% of countries are happy in 2018 based on the data.
 1. &shy;<!-- .element: class="fragment" data-fragment-index="2" -->GDP, Social support status & healthy life expectancy are positively associated with happiness
 1. &shy;<!-- .element: class="fragment" data-fragment-index="3" -->There is not a statistically significant difference between 2018 and 2021 happiness
-1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->There is significant evidence that happiness levels depend on region.
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 #### lımıtatıons
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Potential dependence due to:
-	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Sampling without replacement.
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Potential dependence due to sampling without replacement
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->+ Significant evidence that happiness levels depend on region.
 	- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Regional clustering, e.g., overrepresentation of Sub-Saharan Africa.
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Removing countries with missing data could bias the results
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -735,7 +514,7 @@ Do happiness levels vary significantly by region?
 
 - Derived from subjective well-being calculations as explained in the [World Happiness Report 2023](https://worldhappiness.report/ed/2023/world-happiness-trust-and-social-connections-in-times-of-crisis/).
 
-- _"(...) rely on three main indicators: life evaluations, positive emotions, and negative emotions (...) We base our usual happiness rankings on a three-year average of these life evaluations"_
+- _"(...) rely on three main variables: life evaluations, positive emotions, and negative emotions (...) We base our usual happiness rankings on a three-year average of these life evaluations"_
 - Source: **Gallup World Poll (GWP)**.
 <!-- Footnote -->
 <div class="footnote">
@@ -828,20 +607,22 @@ Do happiness levels vary significantly by region?
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="ci_for_mean_happiness" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Confidence Intervals for Mean Happiness Scores
+##### Constructıng 95% confidence intervals for the mean happiness scores
 
 
-- Construct 95% confidence intervals for the mean happiness scores in 2018 and 2021:  
-	- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$CI_{year} = \bar{x}_{t} \pm t^* \cdot \frac{s_{year}}{\sqrt{n_{year}}}$`  
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->`$CI_{2018} = 5.44 \pm t^* \cdot 0.09 = (5.26, 5.61)$`  
-  `$CI_{2021} = 5.56 \pm t^* \cdot 0.09 = (5.38, 5.73)$`  
+- `$CI_{year} = \bar{x}_{t} \pm t^* \cdot \frac{s_{year}}{\sqrt{n_{year}}}$`  
+	- (`$t^* = 2.14$` for `$95\%$` confidence `$^1$`)
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->We cannot conclude a statistically significant difference in the mean happiness scores between 2018 and 2021.
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`$CI_{2018} = 5.44 \pm 2.14 \cdot 0.09 = (5.26, 5.61)$`  
+  `$CI_{2021} = 5.56 \pm 2.14 \cdot 0.09 = (5.38, 5.73)$`  
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->We cannot conclude a statistically significant difference in the mean happiness scores between 2018 and 2021.
 
 
 <!-- Footnote -->
 <div class="footnote">
+	 <p>1.  with n-1 = 144 degrees of freedom<p>
 	<p><a href="#q3_hypothesis_testing" target="_blank">Back to hypothesis testing  </a>
 </div>
 
@@ -850,143 +631,10 @@ Do happiness levels vary significantly by region?
 <li><code>$t^*$</code> is the critical value from the <code>$t$</code>-distribution with <code>$n-1 = 144$</code> degrees of freedom (<code>$t^* = 2.1448$</code> for <code>$95\%$</code> confidence).</li>
 <li>The overlapping intervals suggest no evidence for a significant change in mean happiness scores.</div></li>
 </ul>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-##### Comparing Happy Countries in 2018 and 2021
-
-`$\hat{p}_{2018} = \frac{x_{2018}}{n_{2018}} = \frac{93}{145} \approx 0.6414$`  
-`$\hat{p}_{2021} = \frac{x_{2021}}{n_{2021}} = \frac{99}{145} \approx 0.6828$`  
-
-`$\Delta \hat{p} = \hat{p}_{2021} - \hat{p}_{2018} = 0.6828 - 0.6414 = 0.0414$`   `$SE = \sqrt{\frac{\hat{p}_{2018}(1 - \hat{p}_{2018})}{n_{2018}} + \frac{\hat{p}_{2021}(1 - \hat{p}_{2021})}{n_{2021}}} \approx 0.0521$`   `$CI = \Delta \hat{p} \pm z^* \cdot SE = 0.0414 \pm 1.96 \cdot 0.0521$`  
-`$CI = 0.0414 \pm 0.1021 = (-0.0674, 0.1502)$`  
-
-No significant difference in the proportions of happy countries between 2018 and 2021.
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#q3_final" target="_blank">Back to Question 3  </a>
-</div>
-
-<aside class="notes"><p>Contingency table below:</p>
-<table>
-<thead>
-<tr>
-<th>Year</th>
-<th>Happy (<code>$x$</code>)</th>
-<th>Unhappy</th>
-<th>Total (<code>$n$</code>)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2018</td>
-<td>93</td>
-<td>52</td>
-<td>145</td>
-</tr>
-<tr>
-<td>2021</td>
-<td>99</td>
-<td>46</td>
-<td>145</td>
-</tr>
-</tbody></table>
-<p>The interval includes 0, so there is no significant difference in the proportions of happy countries between 2018 and 2021.</p>
-</div></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Hypothesis Test for Difference of Proportions
-  
-  `$\hat{p} = \frac{x_{2018} + x_{2021}}{n_{2018} + n_{2021}} = \frac{93 + 99}{145 + 145} = 0.6414$`  
-
- - `$SE = \sqrt{\hat{p} \cdot (1 - \hat{p}) \cdot \left(\frac{1}{n_{2018}} + \frac{1}{n_{2021}}\right)} \approx 0.0522$`  
--  `$Z = \frac{\Delta \hat{p}}{SE} = \frac{0.0414}{0.0522} \approx 0.7449$`  
- 
- With `$Z = 0.7449$` and `$P > 0.05$`, we fail to reject `$H_0$`. 
- 
-Insufficient evidence to conclude a significant change in the proportions of happy countries between 2018 and 2021.
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#q3_final" target="_blank">Back to Question 3  </a>
-</div>
-
-
-<aside class="notes"><p><code>$\hat{p}$</code> pooled proportion</p>
-</div></aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Appendix C: Question 4
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="merged_regions" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### merged regıons
-
-
-
-| **Region**           | **High** | **Low** | **Total** |     |
-| -------------------- | -------- | ------- | --------- | --- |
-| Asia                 | 13       | 8       | 21        |     |
-| CEE                  | 15       | 2       | 17        |     |
-| CIS                  | 9        | 3       | 12        |     |
-| Latin A. & Caribbean | 18       | 2       | 20        |     |
-| MENA                 | 11       | 6       | 17        |     |
-| SubS. Africa         | 2        | 31      | 33        |     |
-| West                 | 25       | 0       | 25        |     |
-| **Total**            | 93       | 52      | 145       |     |
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#expected_counts" target="_blank">Back to Question 4  </a>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="expected_counts_table" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### **Expected Counts Table**
-
-
-| **Region**           | `$E_{High}$` | `$E_{Low}$` |     |
-| -------------------- | ---------- | --------- | --- |
-| Asia                 | `$13.47$`    | `$7.53$`    |     |
-| CEE                  | `$10.90$`    | `$6.10$`    |     |
-| CIS                  | `$7.70$`     | `$4.30$`    |     |
-| Latin A. & Caribbean | `$12.83$`    | `$7.17$`    |     |
-| MENA                 | `$10.90$`    | `$6.10$`    |     |
-| SubS. Africa         | `$21.17$`    | `$11.83$`   |     |
-| West                 | `$16.03$`    | `$8.97$`    |     |
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#expected_counts" target="_blank">Back to Question 4: Expected counts  </a>
-	<p><a href="#calculating_contributions" target="_blank">Back to Question 4: Calculating contributions  </a>
-	
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="more_on_chi_squared_test_results" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-#####  **More on Chi-Square Test Results**
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Sub-Saharan Africa**: Observed far fewer "High" scores and far more "Low" scores than expected.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Western Countries**: The opposite!
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Deviations from expectations are relatively small in other regions.
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Appendix D: Extra slides
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="app:note_method" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Note on methodology
-
-- Here we chose our research questions based on the preliminary analysis
-- Another approach would be to 
-	- (i) ask some questions 
-	- (ii) go find relevant data _(or experiment)_ 
-	- (iii) propose methodology
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#research_questions_2" target="_blank">Back to research questions</a>
-</div>
+### Appendix C: Extra slides
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="app:note_on_ci_vs_ht" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -1002,39 +650,6 @@ Insufficient evidence to conclude a significant change in the proportions of hap
 <!-- Footnote -->
 <div class="footnote">
 	<p><a href="#q1_decision" target="_blank">Back to Question 1 </a>
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="app:proposed_methods_1" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Proposed methods
-
-
-
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 1:  70% of countries were happy in 2018? 
-	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Assessing Normality: Histogram, check empirical rule, CLT
-	- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Confidence intervals and hypothesis testing
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Question 2: What factors are most closely associated with happiness?
-	- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Correlation matrix, scatter plot, side-by-side box plots, side-by-side histograms
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="proposed_methods_2" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##### Proposed methods (2)
-
-
-
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Question 3: How have happiness changed from 2018 to 2021
-	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Confidence intervals, t-test for difference in means, hypothesis tests
-
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Question 4: How do happiness levels vary by region?
-	- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Boxplots, chi-Square test of independence, confidence interval for differences
-
-
-<!-- Footnote -->
-<div class="footnote">
-	<p><a href="#research_questions_2" target="_blank">Back to research questions</a>
 </div>
 </div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
