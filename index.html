@@ -612,7 +612,7 @@ Do happiness levels vary significantly by region?
 ##### **Calculatıng Expected Counts**
 
 
- Create an [expected counts table](#expected_counts_table) with all `$E_{i,j}$` using 
+ Create an [expected counts table](#expected_counts_table) with all `$E_{i,j}$` using the observed counts
 
  `$E = \frac{\text{Row Total} \times \text{Column Total}}{\text{Grand Total}}$`
 
@@ -625,11 +625,11 @@ Do happiness levels vary significantly by region?
 
 ##### **Example: Calculatıng Expected Counts**
 
-| **Region** | **High** | **Low** | **Total** |
-| ---------- | -------- | ------- | --------- |
-| Asia       | 13       | 8       | 21        |
-| ...        | ...      | ...     | ...       |
-| **Total**  | 93       | 52      | 145       |
+| Observed counts table | High | Low | Total |     |
+| --------------------- | ---- | --- | ----- | --- |
+| Asia                  | 13   | 8   | 21    |     |
+| ...                   | ...  | ... | ...   |     |
+| **Total**             | 93   | 52  | 145   |     |
  `$E_{\text{Asia, L}} = \frac{21 \cdot 52}{145} \approx 13.47$` 
  `$E_{\text{Asia, H}} = \frac{21 \cdot 93}{145} \approx 7.53$`
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" id="calculating_contributions" -->
@@ -652,13 +652,13 @@ Do happiness levels vary significantly by region?
 ##### **Chi-Square statıstıc**
 
 
-| Count `$\rightarrow$` | Obverved | Expected | `$\chi^2$` |
-| ------------------- | -------- | -------- | -------- |
-| Asia, H             | `$13$`     | `$13.47$`  | `$0.0163$` |
-| Asia, L             | `$8$`      | `$7.53$`   | `$0.0307$` |
-| CEE, H              | `$15$`     | `$10.90$`  | `$1.5824$` |
-| CEE, L              | `$2$`      | `$6.10$`   | `$2.7525$` |
-| *...*               | *...*    | *...*    | *...*    |
+| Count `$\rightarrow$` | Obverved | Expected | `$\chi^2$` |     |
+| ------------------- | -------- | -------- | -------- | --- |
+| Asia, H             | `$13$`     | `$13.47$`  | `$0.02$`   |     |
+| Asia, L             | `$8$`      | `$7.53$`   | `$0.03$`   |     |
+| CEE, H              | `$15$`     | `$10.90$`  | `$1.58$`   |     |
+| CEE, L              | `$2$`      | `$6.10$`   | `$2.75$`   |     |
+| *...*               | *...*    | *...*    | *...*    |     |
 
  `$\chi^2_{\text{Asia, High}} + \chi^2_{\text{Asia, Low}} + ... +$` `$\chi^2_{\text{West, High}} + \chi^2_{\text{West, Low}} = \chi^{2} = 73.14$`
 
@@ -701,7 +701,7 @@ Do happiness levels vary significantly by region?
 1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->We can not reject the hypothesis that 70% of countries are happy in 2018 based on the data.
 1. &shy;<!-- .element: class="fragment" data-fragment-index="2" -->GDP, Social support status & healthy life expectancy are positively associated with happiness
 1. &shy;<!-- .element: class="fragment" data-fragment-index="3" -->There is not a statistically significant difference between 2018 and 2021 happiness
-1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->There is significant evidence that happiness levels depend on region.  Sub-Saharan Africa shows lower happiness, while Western Countries show higher.
+1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->There is significant evidence that happiness levels depend on region.
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
